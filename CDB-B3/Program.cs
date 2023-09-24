@@ -82,6 +82,7 @@ namespace CDB_B3
 
             var app = builder.Build();
 
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -94,6 +95,13 @@ namespace CDB_B3
             app.UseAuthorization();
 
             app.MapControllers();
+
+            app.UseCors(builder =>
+            {
+                builder.WithOrigins("http://localhost:4200")
+                       .AllowAnyHeader()
+                       .AllowAnyMethod();
+            });
 
             app.Run();
         }
