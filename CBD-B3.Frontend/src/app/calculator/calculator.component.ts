@@ -19,7 +19,7 @@ export class CalculatorComponent {
   netAmount: number | undefined;
   showResults: boolean = false;
   buttonLabel: string = 'Calcular';
-
+  isTestEnvironment: boolean = false;
   
   constructor(
     private http: HttpClient
