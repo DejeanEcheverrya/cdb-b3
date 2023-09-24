@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDB-B3", "CDB-B3.csproj", "{CEF9080F-F80D-4488-9A1A-5BA90234F897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDB-B3", "CDB-B3.csproj", "{CEF9080F-F80D-4488-9A1A-5BA90234F897}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{ADB6A196-7DB2-48A0-98E9-A327DD94A1D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API-Tests", "API-Tests", "{E866FE1F-1E03-42D0-BBF4-07604D140B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDB-B3.Tests", "..\CDB-B3.Tests\CDB-B3.Tests.csproj", "{B37D227D-6214-41D0-B0DA-42AFC44AF77A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{CEF9080F-F80D-4488-9A1A-5BA90234F897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF9080F-F80D-4488-9A1A-5BA90234F897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEF9080F-F80D-4488-9A1A-5BA90234F897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CEF9080F-F80D-4488-9A1A-5BA90234F897} = {ADB6A196-7DB2-48A0-98E9-A327DD94A1D2}
+		{B37D227D-6214-41D0-B0DA-42AFC44AF77A} = {E866FE1F-1E03-42D0-BBF4-07604D140B13}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED9D8075-C133-478D-B13E-A36B9A29D3F4}
