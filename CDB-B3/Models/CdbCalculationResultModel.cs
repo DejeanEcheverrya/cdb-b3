@@ -5,5 +5,13 @@
     /// </summary>
     public class CdbCalculationResultModel
     {
+        /// <summary>
+        /// Gets or sets the gross investment amount.
+        /// </summary>
+        public decimal GrossInvestment { get; set; }
+        /// <summary>
+        /// Gets or sets the net investment amount.
+        /// </summary>
+        public decimal NetInvestment { get; set; }
     }
 }
