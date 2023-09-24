@@ -9,7 +9,33 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{ADB6A196-7DB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API-Tests", "API-Tests", "{E866FE1F-1E03-42D0-BBF4-07604D140B13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDB-B3.Tests", "..\CDB-B3.Tests\CDB-B3.Tests.csproj", "{B37D227D-6214-41D0-B0DA-42AFC44AF77A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDB-B3.Tests", "..\CDB-B3.Tests\CDB-B3.Tests.csproj", "{B37D227D-6214-41D0-B0DA-42AFC44AF77A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{95A885B1-E85C-4D73-B84D-AFC0411607CC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CBD-B3.Frontend", "..\CBD-B3.Frontend\", "{74DB5D1A-98B2-4F99-BD4E-0D9984D11BCF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51871"
+		Debug.AspNetCompiler.PhysicalPath = "..\CBD-B3.Frontend\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51871\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51871"
+		Release.AspNetCompiler.PhysicalPath = "..\CBD-B3.Frontend\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51871\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51871"
+		SlnRelativePath = "..\CBD-B3.Frontend\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +51,10 @@ Global
 		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B37D227D-6214-41D0-B0DA-42AFC44AF77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DB5D1A-98B2-4F99-BD4E-0D9984D11BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DB5D1A-98B2-4F99-BD4E-0D9984D11BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DB5D1A-98B2-4F99-BD4E-0D9984D11BCF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DB5D1A-98B2-4F99-BD4E-0D9984D11BCF}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +62,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CEF9080F-F80D-4488-9A1A-5BA90234F897} = {ADB6A196-7DB2-48A0-98E9-A327DD94A1D2}
 		{B37D227D-6214-41D0-B0DA-42AFC44AF77A} = {E866FE1F-1E03-42D0-BBF4-07604D140B13}
+		{74DB5D1A-98B2-4F99-BD4E-0D9984D11BCF} = {95A885B1-E85C-4D73-B84D-AFC0411607CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED9D8075-C133-478D-B13E-A36B9A29D3F4}
