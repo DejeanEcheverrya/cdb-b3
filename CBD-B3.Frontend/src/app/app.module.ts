@@ -2,13 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { CalculatorModule } from './calculator/calculator.module'; // Importe o CalculatorModule
-
+import { CalculatorModule } from './calculator/calculator.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, CalculatorModule], // Adicione o CalculatorModule aqui
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    FormsModule,
+    CalculatorModule, 
+    HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
