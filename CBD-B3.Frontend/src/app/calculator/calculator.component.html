@@ -1,0 +1,14 @@
+<h3 class="section-title">Simulador de investimento CDB</h3>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="investment-amount">Valor a ser investido (Reais):</label>
+    <input type="text" id="investment-amount" name="investment-amount" class="form-control" [(ngModel)]="investmentAmount" placeholder="Enter the amount">
+  </div>
+  <div class="form-group">
+    <label for="redemption-months">Meses para resgate:</label>
+    <input type="number" min="2" id="redemption-months" name="redemption-months" class="form-control" [(ngModel)]="redemptionMonths" placeholder="Enter the number of months">
+  </div>
+  <div id="confirm-btn-container">
+    <button type="submit" class="btn btn-primary">Calcular</button>
+  </div>
+</form>
