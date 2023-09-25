@@ -10,8 +10,9 @@
       [(ngModel)]="investmentAmount"
       placeholder="Valor a ser investido"
       pattern="[0-9]+(\.[0-9]+)?"
-      currencyMask="{ allowNegative: false, decimal: ',', thousandsSeparator: '.', prefix: '' }"
-      [options]="{ allowNegative: false, prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }" 
+      currencyMask="{ allowNegative: false, prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }"
+      *ngIf="!isTestEnvironment"
+        [options]="{ allowNegative: false, prefix: 'R$ ', thousands: '.', decimal: ',', align: 'left' }" 
     >
   </div>
   <div class="form-group">

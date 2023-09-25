@@ -16,25 +16,29 @@ namespace CDB_B3.Tests.Filters
         {
             // Arrange
             var filter = new ApiVersionOperationFilter();
-            var operation = new OpenApiOperation();
-            operation.Parameters = new List<OpenApiParameter>();
-            operation.Parameters.Add(new OpenApiParameter
+            var operation = new OpenApiOperation
             {
-                Name = "version",
-                In = ParameterLocation.Path,
-                Description = "API version",
-                Required = true,
-                Schema = new OpenApiSchema
+                Parameters = new List<OpenApiParameter>
+            {
+                new OpenApiParameter
                 {
-                     Type = "string",
-                    Default = new OpenApiString("1"), // Default version
-                    Enum = new List<IOpenApiAny>
+                    Name = "version",
+                    In = ParameterLocation.Path,
+                    Description = "API version",
+                    Required = true,
+                    Schema = new OpenApiSchema
+                    {
+                        Type = "string",
+                        Default = new OpenApiString("1"), // Default version
+                        Enum = new List<IOpenApiAny>
                     {
                         new OpenApiString("1"), // Allowed versions
                         // Here we can add more versions
                     }
+                    }
                 }
-            });
+            }
+            };
 
             // Crie uma descrição de API simples
             var apiDescription = new ApiDescription
