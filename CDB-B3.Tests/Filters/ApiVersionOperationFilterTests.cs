@@ -40,7 +40,7 @@ namespace CDB_B3.Tests.Filters
             }
             };
 
-            // Crie uma descrição de API simples
+            //API description
             var apiDescription = new ApiDescription
             {
                 ActionDescriptor = new ControllerActionDescriptor
